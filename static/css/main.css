@@ -8,6 +8,36 @@ body {
     display: flex;
 }
 
+@font-face {
+    font-family:'Fira Sans';
+    src: url('../fonts/Sans Regular.woff2') format('woff2'),
+		url('../fonts/Sans Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+@font-face {
+    font-family:'Fira Sans SemiBold';
+    src: url('../fonts/Sans SemiBold.woff2') format('woff2'),
+		url('../fonts/Fira Sans SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+@font-face {
+    font-family:'Fira Sans';
+    src: url('../fonts/Fira Sans Bold.woff2') format('woff2'),
+		url('../fonts/Fira Sans Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
 /* ---------------- NAVIGATION ---------------- */
 
 nav {
