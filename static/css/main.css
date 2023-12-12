@@ -2,10 +2,16 @@
 
 body {
     background-color: black;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .flex {
     display: flex;
+    gap: 2rem;
+}
+
+.container {
+    padding: 0rem 7.5rem;
 }
 
 @font-face {
@@ -38,6 +44,22 @@ body {
     unicode-range: U+0020-2212;
 }
 
+/* ---------------- SVG ---------------- */
+
+svg {
+    width: 1.8rem;
+}
+
+.hamburger-svg {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.red:hover {
+    color: red;
+    fill: red;
+}
+
 /* ---------------- NAVIGATION ---------------- */
 
 nav {
@@ -46,20 +68,36 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 2rem 5rem; 
+    padding: 4rem 10rem;
+    font-weight: 600;
 }
 
 nav ul {
     gap: 2rem;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
 
 nav li {
     list-style: none;
 }
 
+.flex li {
+    gap: 0.5rem;
+}
+
 nav a {
     color: white;
     text-decoration: none;
+    position: relative;
+}
+
+nav a.hover:hover::after {
+    content: "";
+    width: 1.3rem;
+    height: 10%;
+    background: white;
+    position: absolute;
+    bottom: -50%;
+    left: 0%;
 }
