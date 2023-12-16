@@ -10,8 +10,13 @@ body {
     gap: 2rem;
 }
 
+.relative {
+    position: relative;
+}
+
 .container {
     padding: 0rem 8rem;
+    margin: auto;
 }
 
 .bg-light-color {
@@ -118,7 +123,6 @@ nav a.hover:hover::after {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    
 }
 
 #gf-image {
@@ -161,4 +165,23 @@ nav a.hover:hover::after {
 .grid-layout:hover {
     background-color: black;
     color: white;
+}
+
+/* ---------------- RED CIRCLE ---------------- */
+
+.red-circle {
+    background-color: hsl(0, 79%, 57%);
+    color: black;
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    font-weight: 800;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    transform: translate(-50%, -50%);
 }
