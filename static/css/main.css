@@ -148,7 +148,7 @@ nav a.hover:hover::after {
 }
 
 .arrow-box:hover img{
-    transform: scaleX(20);
+    transform: scaleX(2);
 }
 
 .arrow-box h2,
@@ -259,8 +259,32 @@ nav a.hover:hover::after {
     background-size: cover;
 }
 
+.second-grid-layout:last-of-type:hover {
+    border: none;
+}
+
 .second-grid-layout:hover {
-    background-color: hsl(0, 79%, 57%);
     color: black;
+    background-color: hsl(0, 79%, 57%);
     border: 1.5px solid hsl(0, 79%, 57%);
+}
+
+.newsletter {
+    border: 1.5px solid white;
+    padding: 1rem;
+    transition: .5s;
+    margin-left: 19rem;
+}
+
+.newsletter a {
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter:hover {
+    background-color: white;
+}
+
+.newsletter a:hover {
+    color: black;
 }
