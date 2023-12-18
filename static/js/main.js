@@ -1,3 +1,18 @@
+/* ---------------- JSON FILE READER ---------------- */
+
+import {getNews} from "./fetchData.js";
+
+async function getNewsItems() {
+    const newsItems = await getNews();
+    console.log(newsItems);
+};
+
+getNewsItems();
+
+/* newsItems[i].synopsis*/
+
+/* ---------------- GENERATE LOGO AND IMAGE SYNCH ---------------- */
+
 const randomNumber = Math.floor(Math.random() * 6) + 1;
 
 function getLogo() {
@@ -18,3 +33,6 @@ function buildLogo() {
 };
 
 buildLogo();
+
+/* ---------------- NEWS GRID ---------------- */
+
