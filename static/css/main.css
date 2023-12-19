@@ -232,6 +232,39 @@ nav a.hover:hover::after {
     padding: 1rem;
 }
 
+/* ---------------- SECTION 2  EVENTS ---------------- */
+
+#events {
+    z-index: 10;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.article-event {
+    width: 30rem;
+}
+
+.event-date {
+    background-color: black;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    padding: .4rem;
+    text-transform: uppercase;
+}
+
+.artist-information {
+    background-color: black;
+    padding: .5rem;
+}
+
+.red-box {
+    background-color: hsl(0, 79%, 57%);
+    color: black;
+    padding: .3rem;
+    text-align: center;
+}
+
 /* ---------------- SECTION 2 GRID + NEWSLETTER ---------------- */
 
 .second-grid {

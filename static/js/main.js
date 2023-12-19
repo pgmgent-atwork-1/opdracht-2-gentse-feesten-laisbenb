@@ -23,7 +23,31 @@ function getImage() {
 
 async function getEventItems() {
     const eventItems = await getEvents();
-    console.log(eventItems);
+    //console.log(eventItems);
+    generateEventItems(eventItems);
+};
+
+function generateEventItems(eventItems) {
+    //day , day_of_week , start , title , location , month=juli , image
+    let html = "";
+    for (let i = 0; i < 8; i++) {
+        const randomEvent = Math.floor(Math.random() * 500);
+        let event = document.getElementById('events');
+        html += `<article class="article-event relative">
+        <div class="artist-image">
+            <img src="${eventItems[randomEvent].image.full}" alt="Image of artist">
+        </div>
+        <div class="event-date">
+            <p>${eventItems[randomEvent].day_of_week} ${eventItems[randomEvent].day} juli</p>
+        </div>
+        <div class="artist-information">
+            <h2>${eventItems[randomEvent].title}</h2>
+            <p><span class="red-box">${eventItems[randomEvent].location}</span> ${eventItems[randomEvent].start} u </p>
+        </div>
+        </article>`;
+        event.innerHTML = html;
+    };
+    // BUGS: null niet gefiltered, en soms 2 dezelfde displayed !
 };
 
 getEventItems();
