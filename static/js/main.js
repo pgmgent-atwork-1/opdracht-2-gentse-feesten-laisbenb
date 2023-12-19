@@ -1,6 +1,7 @@
 /* ---------------- JSON FILE READER ---------------- */
 
 import {getNews} from "./fetchData.js";
+import {getEvents} from "./fetchData.js";
 
 /* ---------------- GENERATE LOGO AND IMAGE SYNCH ---------------- */
 
@@ -18,11 +19,19 @@ function getImage() {
     image.innerHTML = html;
 }
 
+/* ---------------- EVENTS ---------------- */
+
+async function getEventItems() {
+    const eventItems = await getEvents();
+    console.log(eventItems);
+};
+
+getEventItems();
+
 /* ---------------- NEWS GRID ---------------- */
 
 async function getNewsItems() {
     const newsItems = await getNews();
-    //console.log(newsItems);
     generateNewsItems(newsItems);
 };
 
@@ -30,7 +39,6 @@ async function getNewsItems() {
 async function generateNewsItems(newsItems) {
     for (let i = 0; i < 3; i++) {
         let title = document.getElementById(`div${i + 11}`);
-        console.log(newsItems[i].synopsis);
         const html = `<h2>${newsItems[i].synopsis}</h2>`;
         title.innerHTML = html;
     };
