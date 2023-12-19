@@ -2,15 +2,6 @@
 
 import {getNews} from "./fetchData.js";
 
-async function getNewsItems() {
-    const newsItems = await getNews();
-    console.log(newsItems);
-};
-
-getNewsItems();
-
-/* newsItems[i].synopsis*/
-
 /* ---------------- GENERATE LOGO AND IMAGE SYNCH ---------------- */
 
 const randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -27,12 +18,33 @@ function getImage() {
     image.innerHTML = html;
 }
 
-function buildLogo() {
-    getLogo();
-    getImage();
+/* ---------------- NEWS GRID ---------------- */
+
+async function getNewsItems() {
+    const newsItems = await getNews();
+    //console.log(newsItems);
+    generateNewsItems(newsItems);
 };
 
-buildLogo();
 
-/* ---------------- NEWS GRID ---------------- */
+async function generateNewsItems(newsItems) {
+    for (let i = 0; i < 3; i++) {
+        let title = document.getElementById(`div${i + 11}`);
+        console.log(newsItems[i].synopsis);
+        const html = `<h2>${newsItems[i].synopsis}</h2>`;
+        title.innerHTML = html;
+    };
+};
+
+/* ---------------- BUILD SCRIPT FUNCTION ---------------- */
+
+function buildScript() {
+    getLogo();
+    getImage();
+    getNewsItems();
+};
+
+buildScript();
+
+
 
