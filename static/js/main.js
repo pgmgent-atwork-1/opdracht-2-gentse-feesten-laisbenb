@@ -17,7 +17,7 @@ function getImage() {
     let image = document.getElementById('gf-image');
     const html = `<img src="static/img/Gentse Feesten Logos/campagne-${randomNumber}.png" alt="Gentse fees ten image">`;
     image.innerHTML = html;
-}
+};
 
 /* ---------------- EVENTS ---------------- */
 
@@ -31,23 +31,29 @@ function generateEventItems(eventItems) {
     //day , day_of_week , start , title , location , month=juli , image
     let html = "";
     for (let i = 0; i < 8; i++) {
-        const randomEvent = Math.floor(Math.random() * 500);
-        let event = document.getElementById('events');
+        const randomEventNumber = Math.floor(Math.random() * 500);
+        let checkNumber = -1;
+        if (checkNumber != randomEventNumber) {
+            let event = document.getElementById('events');
         html += `<article class="article-event relative">
         <div class="artist-image">
-            <img src="${eventItems[randomEvent].image.full}" alt="Image of artist">
+            <img src="${eventItems[randomEventNumber].image.full}" alt="Image of event">
         </div>
         <div class="event-date">
-            <p>${eventItems[randomEvent].day_of_week} ${eventItems[randomEvent].day} juli</p>
+            <p>${eventItems[randomEventNumber].day_of_week} ${eventItems[randomEventNumber].day} juli</p>
         </div>
         <div class="artist-information">
-            <h2>${eventItems[randomEvent].title}</h2>
-            <p><span class="red-box">${eventItems[randomEvent].location}</span> ${eventItems[randomEvent].start} u </p>
+            <h2>${eventItems[randomEventNumber].title}</h2>
+            <p><span class="red-box">${eventItems[randomEventNumber].location}</span> ${eventItems[randomEventNumber].start} u </p>
         </div>
         </article>`;
         event.innerHTML = html;
+        };
+        checkNumber = randomEventNumber;
+        console.log(randomEventNumber);
     };
-    // BUGS: null niet gefiltered, en soms 2 dezelfde displayed !
+    // BUGS: null niet gefiltered !
+    // HErschrijf deze code met .slice() method.
 };
 
 getEventItems();
