@@ -237,10 +237,12 @@ nav a.hover:hover::after {
     z-index: 10;
     overflow-x: auto;
     flex-wrap: nowrap;
+    width: 60rem;
+    padding: 5rem 0;
 }
 
 .article-event {
-    width: 30rem;
+    min-width: 20rem;
 }
 
 .event-date {
@@ -255,6 +257,8 @@ nav a.hover:hover::after {
 .artist-information {
     background-color: black;
     padding: .5rem;
+    position: absolute;
+    bottom: -10%;
 }
 
 .red-box {
