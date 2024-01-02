@@ -8,15 +8,17 @@ import {getEvents} from "./fetchData.js";
 const randomNumber = Math.floor(Math.random() * 6) + 1;
 
 function getLogo() {
-    let image = document.getElementById('gf-logo');
-    const html = `<a href="index.html"><img src="static/img/Gentse Feesten Logos/GF-logo-2023-${randomNumber}.svg" alt="Gentse feesten logo"></a>`;
-    image.innerHTML = html;
+    const firstLogo = document.getElementById('gf-header-logo');
+    const secondLogo = document.getElementById('gf-footer-logo')
+    const logoSrc = `static/img/Gentse Feesten Logos/GF-logo-2023-${randomNumber}.svg`;
+    firstLogo.src = logoSrc;
+    secondLogo.src = logoSrc;
 };
 
 function getImage() {
-    let firstImage = document.getElementById('gf-main-image');
-    let secondImage = document.getElementById('gf-footer-image');
-    let imageSrc = `static/img/Gentse Feesten Logos/campagne-${randomNumber}.png`;
+    const firstImage = document.getElementById('gf-main-image');
+    const secondImage = document.getElementById('gf-footer-image');
+    const imageSrc = `static/img/Gentse Feesten Logos/campagne-${randomNumber}.png`;
     firstImage.src = imageSrc;
     secondImage.src = imageSrc;
 };
