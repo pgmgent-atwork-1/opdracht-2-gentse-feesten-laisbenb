@@ -376,3 +376,18 @@ nav a.hover:hover::after {
 .footer-right-flex-box a:hover {
     color: black;
 }
+
+/* ---------------- SECTION 2 ---------------- */
+
+.gf-second-section-footer {
+    flex-direction: column;
+}
+
+.footer-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    background-color: white;
+}
