@@ -317,7 +317,7 @@ nav a.hover:hover::after {
 .newsletter {
     border: 1.5px solid white;
     padding: 1rem;
-    transition: .5s;
+    transition: .2s;
     margin-left: 19rem;
 }
 
@@ -356,16 +356,18 @@ nav a.hover:hover::after {
 
 /* ---------------- IMAGE + NEWSLETTER ---------------- */
 
-.footer-flexbox {
-    justify-content: space-between;
-    gap: 5rem;
+.footer-flex-box {
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-end;
 }
 
 .red-button {
     border: 1px solid hsl(0, 79%, 57%);
     text-transform: uppercase;
     font-weight: 600;
-    width: 10rem;
+    width: 13rem;
+    padding: 1rem;
 }
 
 .red-button:hover {
@@ -374,12 +376,40 @@ nav a.hover:hover::after {
     cursor: pointer;
 }
 
+.footer-right-flex-box {
+    padding-bottom: 2rem;
+    flex-direction: column;
+}
+
+.footer-right-flex-box h2 {
+    font-size: 3rem;
+}
+
+.footer-right-flex-box p {
+    font-size: 1.2rem;
+}
+
+.footer-right-flex-box p:last-of-type {
+    font-size: .8rem;
+}
+
+.footer-right-flex-box input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 1rem;
+}
+
 .footer-right-flex-box a {
     color:hsl(0, 79%, 57%);
 }
 
 .footer-right-flex-box a:hover {
     color: black;
+}
+
+#subscribeForm {
+    flex-direction: column;
 }
 
 /* ---------------- SECTION 2 ---------------- */
