@@ -14,16 +14,17 @@ function getLogo() {
 };
 
 function getImage() {
-    let image = document.getElementById('gf-image');
-    const html = `<img src="static/img/Gentse Feesten Logos/campagne-${randomNumber}.png" alt="Gentse fees ten image">`;
-    image.innerHTML = html;
+    let firstImage = document.getElementById('gf-main-image');
+    let secondImage = document.getElementById('gf-footer-image');
+    let imageSrc = `static/img/Gentse Feesten Logos/campagne-${randomNumber}.png`;
+    firstImage.src = imageSrc;
+    secondImage.src = imageSrc;
 };
 
 /* ---------------- EVENTS ---------------- */
 
 async function getEventItems() {
     const eventItems = await getEvents();
-    //console.log(eventItems);
     generateEventItems(eventItems);
 };
 

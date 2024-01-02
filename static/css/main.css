@@ -130,8 +130,9 @@ nav a.hover:hover::after {
     gap: 5rem;
 }
 
-#gf-image {
-    width: 40rem;
+#gf-main-image,
+#gf-footer-image {
+    width: 35rem;
 }
 
 .arrow-box {
@@ -207,10 +208,13 @@ nav a.hover:hover::after {
     justify-content: center;
     border-radius: 20rem;
     font-weight: 800;
+    transform: translate(-50%, -50%);
+}
+
+.header-red-circle {
     position: absolute;
     top: 3%;
     right: 5%;
-    transform: translate(-50%, -50%);
 }
 
 /* ---------------- SECTION 2 ---------------- */
@@ -328,6 +332,7 @@ nav a.hover:hover::after {
 
 /* ---------------- FOOTER ---------------- */
 /* ---------------- SECTION 1 ---------------- */
+/* ---------------- TOP RED BOXES ---------------- */
 
 .first-footer-section {
     color: black;
@@ -340,9 +345,15 @@ nav a.hover:hover::after {
 
 .red-link {
     background-color: hsl(0, 79%, 57%);
-    color: black;
     font-size: 3rem;
     padding: 1rem;
+}
+
+/* ---------------- IMAGE + NEWSLETTER ---------------- */
+
+.footer-flexbox {
+    justify-content: space-between;
+    gap: 5rem;
 }
 
 .red-button {
