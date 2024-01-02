@@ -211,10 +211,15 @@ nav a.hover:hover::after {
     transform: translate(-50%, -50%);
 }
 
-.header-red-circle {
+.top-red-circle {
     position: absolute;
     top: 3%;
     right: 5%;
+}
+
+.bottom-red-circle {
+    position: absolute;
+    left: 15%;
 }
 
 /* ---------------- SECTION 2 ---------------- */
@@ -381,6 +386,7 @@ nav a.hover:hover::after {
 
 .gf-second-section-footer {
     flex-direction: column;
+    gap: 6rem;
 }
 
 .footer-container {
@@ -388,6 +394,31 @@ nav a.hover:hover::after {
     align-items: center;
 }
 
-.socials {
+.socials-svg {
     background-color: white;
+    width: 5rem;
+    border-radius: 5rem;
+    padding: .5rem;
+}
+
+.socials-svg:hover {
+    background-color: hsl(0, 79%, 57%);
+}
+
+.footer-container h2 {
+    font-size: 4rem;
+}
+
+.bottom-footer-container {
+    font-size: .8rem;
+    color: hsl(0, 0%, 70%);
+}
+
+.bottom-footer-container a {
+    text-decoration: none;
+    color: hsl(0, 0%, 70%);
+}
+
+.bottom-footer-container a:hover {
+    text-decoration: underline;
 }
