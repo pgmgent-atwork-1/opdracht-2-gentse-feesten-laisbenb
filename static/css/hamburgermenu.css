@@ -1,11 +1,48 @@
 /* ---------------- OVERLAY ---------------- */
 
 #overlay {
-    display: block;
+    display: none;
+    position: fixed;
     background-color: hsl(0, 79%, 57%);
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 100;
+    padding-left: 8rem;
+    justify-content: space-between;
+}
+
+#gf-menu-logo {
+    padding: 2rem 0;
+}
+
+.menu-nav {
+    padding: 0; 
+}
+
+.menu-nav ul {
+    text-align: left;
+    line-height: 3rem;
+    padding: 0;
+}
+
+.menu-nav a{
+    color: black;
+}
+
+.menu-nav a:hover {
+    color: white;
+}
+
+.menu-nav-icons {
+    padding: 2rem;
+    justify-content: end;
+}
+
+.menu-nav-icons p {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
 }
 
 #closeMenu {
@@ -14,6 +51,7 @@
     cursor: pointer;
 }
 
-#closeMenu:hover {
+.white:hover {
     fill: white;
 }
+

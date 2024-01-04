@@ -3,7 +3,7 @@ const hamburger = document.getElementById('hamburger-menu-button');
 const close = document.getElementById('closeMenu');
 
 function openMenu() {
-   overlay.style.display = "block";
+   overlay.style.display = "flex";
 };
 
 function closeMenu() {

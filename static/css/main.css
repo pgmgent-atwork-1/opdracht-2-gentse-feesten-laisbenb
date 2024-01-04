@@ -76,11 +76,14 @@ svg {
 nav {
     color: white;
     text-transform: uppercase;
+    padding: 4rem 10rem;
+    font-weight: 600;
+}
+
+.nav-flex {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 4rem 10rem;
-    font-weight: 600;
 }
 
 nav ul {
@@ -136,8 +139,9 @@ nav a.hover:hover::after {
 }
 
 #gf-main-image,
-#gf-footer-image {
-    width: 35rem;
+#gf-footer-image,
+#gf-menu-image {
+    width: 40rem;
 }
 
 .arrow-box {
