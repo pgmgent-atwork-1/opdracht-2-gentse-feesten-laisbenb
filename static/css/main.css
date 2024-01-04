@@ -64,7 +64,6 @@ svg {
 
 .hamburger-svg {
     width: 3rem;
-    cursor: pointer;
 }
 
 .red:hover {
@@ -116,6 +115,12 @@ nav a.hover:hover::after {
 
 #gf-logo {
     width: 15rem;
+}
+
+.hamburger-menu-button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
 }
 
 /* ---------------- MAIN ---------------- */
