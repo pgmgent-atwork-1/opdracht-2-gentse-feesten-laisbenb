@@ -1,7 +1,14 @@
+const overlay = document.getElementById('overlay');
 const hamburger = document.getElementById('hamburger-menu-button');
+const close = document.getElementById('closeMenu');
 
-function toggleMenu() {
-   
+function openMenu() {
+   overlay.style.display = "block";
 };
 
-hamburger.addEventListener("click", toggleMenu);
+function closeMenu() {
+    overlay.style.display = "none";
+};
+
+hamburger.addEventListener("click", openMenu);
+close.addEventListener("click", closeMenu);
