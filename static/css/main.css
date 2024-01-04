@@ -113,11 +113,11 @@ nav a.hover:hover::after {
     left: 0%;
 }
 
-#gf-logo {
+#gf-header-logo {
     width: 15rem;
 }
 
-.hamburger-menu-button {
+#hamburger-menu-button {
     background: transparent;
     cursor: pointer;
     border: none;
