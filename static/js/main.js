@@ -42,7 +42,7 @@ function generateEventItems(eventItems) {
         console.log(`Checknumber start = ${checkNumber}`);
         let randomEventNumber = Math.floor(Math.random() * 500);
         console.log(randomEventNumber);
-        if (checkNumber != randomEventNumber && eventItems[randomEventNumber].image != null) {
+        if (checkNumber != randomEventNumber && eventItems[randomEventNumber].image !== null) {
             let event = document.getElementById('events');
         html += `<article class="article-event relative">
         <div class="artist-image">
@@ -78,7 +78,6 @@ function generateEventItems(eventItems) {
         checkNumber = randomEventNumber;
         console.log(`Checknumber end = ${checkNumber}`);
     };
-    // BUGS: null niet gefiltered !
     // HErschrijf deze code met .slice() method.
 };
 

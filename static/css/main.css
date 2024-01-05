@@ -461,3 +461,11 @@ nav a.hover:hover::after {
 .bottom-footer-container a:hover {
     text-decoration: underline;
 }
+
+/* ---------------- NEWS PAGE ---------------- */
+/* ---------------- MAIN ---------------- */
+
+.news-page {
+    padding-top: 0rem;
+    font-size: 2rem;
+}
