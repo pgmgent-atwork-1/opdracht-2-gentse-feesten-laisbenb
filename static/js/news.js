@@ -41,8 +41,8 @@ function generateNewsPageItems(newsItems) {
         <h2>${newsItems[newsItem].title}</h2>
     </div>
         <img src="${newsItems[newsItem].picture.large}" alt="News image">
-    </article>
-    <div class"red-bg">Obama</div>`
+        <div class="red-bg"></div>
+    </article>`
     console.log(newsItems[newsItem].picture.large);
    };
    newNewsItems.innerHTML = html;

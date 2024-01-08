@@ -474,24 +474,42 @@ nav a.hover:hover::after {
     border: 2px solid white;
     width: 100%;
     justify-content: space-between;
+    transition: .5s;
 }
 
 .newsbox img {
-    width: 60%;
+    width: 67%;
     height: 100%;
 }
 
 .left-newsbox {
     padding: 1rem;
-    width: 33%;
+    width: 30%;
+    z-index: 10;
 }
 
 .left-newsbox h2 {
     font-size: 2rem;
+    transition: .5s;
 }
 
 .red-bg {
     background-color: hsl(0, 79%, 57%);
-    width: 10rem;
-    height: 5rem;
+    width: 40%;
+    height: 7rem;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.newsbox:hover {
+    border: none;
+}
+
+.newsbox:hover h2{
+    color: black;
+}
+
+.newsbox:hover .red-bg{
+    opacity: 1;
 }
