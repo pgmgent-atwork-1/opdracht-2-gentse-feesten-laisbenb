@@ -466,6 +466,32 @@ nav a.hover:hover::after {
 /* ---------------- MAIN ---------------- */
 
 .news-page {
-    padding-top: 0rem;
+    padding: 0rem 1rem;
     font-size: 2rem;
+}
+
+.newsbox {
+    border: 2px solid white;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.newsbox img {
+    width: 60%;
+    height: 100%;
+}
+
+.left-newsbox {
+    padding: 1rem;
+    width: 33%;
+}
+
+.left-newsbox h2 {
+    font-size: 2rem;
+}
+
+.red-bg {
+    background-color: hsl(0, 79%, 57%);
+    width: 10rem;
+    height: 5rem;
 }

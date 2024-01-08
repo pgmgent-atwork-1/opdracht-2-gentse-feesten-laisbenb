@@ -81,8 +81,6 @@ function generateEventItems(eventItems) {
     // HErschrijf deze code met .slice() method.
 };
 
-getEventItems();
-
 /* ---------------- NEWS GRID ---------------- */
 
 async function getNewsItems() {
@@ -105,6 +103,7 @@ function buildScript() {
     getLogo();
     getImage();
     getNewsItems();
+    getEventItems();
 };
 
 buildScript();
