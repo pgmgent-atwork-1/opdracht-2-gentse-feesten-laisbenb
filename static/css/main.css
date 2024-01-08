@@ -474,7 +474,7 @@ nav a.hover:hover::after {
     border: 2px solid white;
     width: 100%;
     justify-content: space-between;
-    transition: .5s;
+    transition: .3s;
 }
 
 .newsbox img {
@@ -486,20 +486,22 @@ nav a.hover:hover::after {
     padding: 1rem;
     width: 30%;
     z-index: 10;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .left-newsbox h2 {
     font-size: 2rem;
-    transition: .5s;
+    transition: .3s;
 }
 
 .red-bg {
     background-color: hsl(0, 79%, 57%);
     width: 40%;
-    height: 7rem;
+    height: 13rem;
     position: absolute;
     opacity: 0;
-    transition: .5s;
+    transition: .3s;
 }
 
 .newsbox:hover {
@@ -512,4 +514,22 @@ nav a.hover:hover::after {
 
 .newsbox:hover .red-bg{
     opacity: 1;
+}
+
+.arrow-chevron {
+    align-items: center;
+}
+
+.arrow-chevron svg {
+    transform: translateX(-175%);
+}
+
+.arrow {
+    border-bottom: 3px solid white;
+    width: 4rem;
+    transition: .2s;
+}
+
+.newsbox:hover .arrow {
+    width: 6rem;
 }
