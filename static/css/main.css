@@ -548,3 +548,31 @@ nav a.hover:hover::after {
 .newsbox:hover .arrow {
     width: 6rem;
 }
+
+/* ---------------- SEARCH PAGE ---------------- */
+
+.search-page {
+
+}
+
+.search-page h1{
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+.searchbox {
+    width: 100%;
+    padding-top: 0rem;
+}
+
+.search-bar {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: .8rem;
+    width: 100%;
+}
+
+.search-bar::placeholder {
+    color: white;
+}
