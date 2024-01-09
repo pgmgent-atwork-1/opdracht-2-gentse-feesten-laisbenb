@@ -504,6 +504,7 @@ nav a.hover:hover::after {
     width: 100%;
     justify-content: space-between;
     transition: .3s;
+    cursor: pointer;
 }
 
 .newsbox img {
@@ -564,7 +565,7 @@ nav a.hover:hover::after {
     justify-content: center;
 }
 
-.search-bar {
+#search-bar {
     background: transparent;
     border: 1px solid white;
     border-right: none;
@@ -573,7 +574,7 @@ nav a.hover:hover::after {
     width: 80%;
 }
 
-.search-bar::placeholder {
+#search-bar::placeholder {
     color: white;
 }
 

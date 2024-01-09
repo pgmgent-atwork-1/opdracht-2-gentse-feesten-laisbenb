@@ -10,7 +10,7 @@ async function getNewsPageItems() {
 };
 
 function generateNewsPageItems(newsItems) {
-   console.log(newsItems);
+   //console.log(newsItems);
    const newNewsItems = document.getElementById('newsItems');
    let html = "";
    for (const newsItem in newsItems) {
@@ -25,7 +25,7 @@ function generateNewsPageItems(newsItems) {
         <img src="${newsItems[newsItem].picture.large}" alt="News image">
         <div class="red-bg"></div>
     </article>`
-    console.log(newsItems[newsItem].picture.large);
+    //console.log(newsItems[newsItem].picture.large);
    };
    newNewsItems.innerHTML = html;
 };
