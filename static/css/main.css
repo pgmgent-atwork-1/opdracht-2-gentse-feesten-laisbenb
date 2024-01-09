@@ -563,16 +563,27 @@ nav a.hover:hover::after {
 .searchbox {
     width: 100%;
     padding-top: 0rem;
+    flex-wrap: nowrap;
+    gap: 0rem;
+    justify-content: center;
 }
 
 .search-bar {
     background: transparent;
     border: 1px solid white;
+    border-right: none;
     color: white;
     padding: .8rem;
-    width: 100%;
+    width: 80%;
 }
 
 .search-bar::placeholder {
     color: white;
+}
+
+.search-bar-icon {
+    padding: .8rem;
+    border: 1px solid white;
+    border-left: none;
+    width: 4%;
 }
