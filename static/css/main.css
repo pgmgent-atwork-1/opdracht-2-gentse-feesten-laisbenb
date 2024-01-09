@@ -26,6 +26,10 @@ body {
     background-color: hsl(31, 49%, 81%);
 }
 
+.black {
+    color: black;
+}
+
 @font-face {
     font-family:'Fira Sans';
     src: url('../fonts/Sans Regular.woff2') format('woff2'),
@@ -54,6 +58,31 @@ body {
     font-style: normal;
     font-stretch: normal;
     unicode-range: U+0020-2212;
+}
+
+/* ---------------- CHEVRON ARROW ---------------- */
+
+.arrow-chevron {
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-chevron svg {
+    transform: translateX(-175%);
+}
+
+.arrow {
+    border-bottom: 3px solid white;
+    width: 4rem;
+    transition: .2s;
+}
+
+.black-arrow {
+    border-bottom: 3px solid black;
+}
+
+.arrow-chevron:hover .arrow {
+    width: 6rem;
 }
 
 /* ---------------- SVG ---------------- */
@@ -514,20 +543,6 @@ nav a.hover:hover::after {
 
 .newsbox:hover .red-bg{
     opacity: 1;
-}
-
-.arrow-chevron {
-    align-items: center;
-}
-
-.arrow-chevron svg {
-    transform: translateX(-175%);
-}
-
-.arrow {
-    border-bottom: 3px solid white;
-    width: 4rem;
-    transition: .2s;
 }
 
 .newsbox:hover .arrow {
