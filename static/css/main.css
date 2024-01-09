@@ -406,6 +406,7 @@ nav a.hover:hover::after {
     font-weight: 600;
     width: 13rem;
     padding: 1rem;
+    
 }
 
 .red-button:hover {
