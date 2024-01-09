@@ -581,5 +581,6 @@ nav a.hover:hover::after {
     padding: .8rem;
     border: 1px solid white;
     border-left: none;
-    width: 4%;
+    width: 4rem;
+    cursor: pointer;
 }
