@@ -602,6 +602,7 @@ nav a.hover:hover::after {
     gap: 4rem;
     flex-wrap: wrap;
     padding-bottom: 5rem;
+    width: 100%;
 }
 
 .search-article {

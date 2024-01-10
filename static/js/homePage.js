@@ -15,21 +15,22 @@ function generateEventItems(eventItems) {
     let html = "";
     let checkNumber = -1;
     for (let i = 0; i < 8; i++) {
-        console.log(`Checknumber start = ${checkNumber}`);
+        console.log(`Check number start = ${checkNumber}`);
         let randomEventNumber = Math.floor(Math.random() * 500);
+        const eventItem = eventItems[randomEventNumber];
         console.log(randomEventNumber);
-        if (checkNumber != randomEventNumber && eventItems[randomEventNumber].image !== null) {
+        if (checkNumber != randomEventNumber && eventItem.image !== null) {
             let event = document.getElementById('events');
         html += `<article class="article-event relative">
         <div class="artist-image">
-            <img src="${eventItems[randomEventNumber].image.full}" alt="Image of event">
+            <img src="${eventItem.image.full}" alt="Image of event">
         </div>
         <div class="event-date">
-            <p>${eventItems[randomEventNumber].day_of_week} ${eventItems[randomEventNumber].day} juli</p>
+            <p>${eventItem.day_of_week.slice(0, 2)} ${eventItem.day} juli</p>
         </div>
         <div class="artist-information">
-            <h2>${eventItems[randomEventNumber].title}</h2>
-            <p><span class="red-box">${eventItems[randomEventNumber].location}</span> ${eventItems[randomEventNumber].start} u </p>
+            <h2>${eventItem.title}</h2>
+            <p><span class="red-box">${eventItem.location}</span> ${eventItem.start} u </p>
         </div>
         </article>`;
         event.innerHTML = html;
@@ -38,23 +39,23 @@ function generateEventItems(eventItems) {
             let event = document.getElementById('events');
         html += `<article class="article-event relative">
         <div class="artist-image">
-            <img src="${eventItems[randomEventNumber].image.full}" alt="Image of event">
+            <img src="${eventItem.image.full}" alt="Image of event">
         </div>
         <div class="event-date">
-            <p>${eventItems[randomEventNumber].day_of_week} ${eventItems[randomEventNumber].day} juli</p>
+            <p>${eventItem.day_of_week.slice(0, 2)} ${eventItem.day} juli</p>
         </div>
         <div class="artist-information">
-            <h2>${eventItems[randomEventNumber].title}</h2>
-            <p><span class="red-box">${eventItems[randomEventNumber].location}</span> ${eventItems[randomEventNumber].start} u </p>
+            <h2>${eventItem.title}</h2>
+            <p><span class="red-box">${eventItem.location}</span> ${eventItem.start} u </p>
         </div>
         </article>`;
         event.innerHTML = html;
         console.log(`Second random number check = ${checkNumber}`);
         };
         checkNumber = randomEventNumber;
-        console.log(`Checknumber end = ${checkNumber}`);
+        console.log(`Check number end = ${checkNumber}`);
     };
-    // HErschrijf deze code met .slice() method.
+    // Herschrijf deze code met .slice() method.
 };
 
 /* ---------------- NEWS GRID ---------------- */
