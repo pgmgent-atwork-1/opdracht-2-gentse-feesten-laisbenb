@@ -562,6 +562,10 @@ nav a.hover:hover::after {
     width: 100%;
     padding-top: 0rem;
     flex-wrap: nowrap;
+}
+
+.search-form {
+    width: 100%;
     gap: 0rem;
     justify-content: center;
 }
@@ -572,17 +576,21 @@ nav a.hover:hover::after {
     border-right: none;
     color: white;
     padding: .8rem;
-    width: 80%;
+    width: 70%;
 }
 
 #search-bar::placeholder {
     color: white;
 }
 
-.search-bar-icon {
-    padding: .8rem;
+#search-button {
+    background: transparent;
     border: 1px solid white;
     border-left: none;
+}
+
+.search-bar-icon {
+    padding: .8rem;
     width: 4rem;
     cursor: pointer;
 }
