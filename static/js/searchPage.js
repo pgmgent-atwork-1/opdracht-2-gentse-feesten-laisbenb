@@ -1,10 +1,11 @@
 /* ---------------- JSON FILE READER ---------------- */
 
 //import {getEvents} from "./fetchData.js";
+
 function fetchData() {
-    fetch('https://www.pgm.gent/data/gentsefeesten/events_500.json')
+    return fetch('https://www.pgm.gent/data/gentsefeesten/events_500.json')
         .then(response => response.json());
-};
+}
 
 /* ---------------- LOAD IN EVENTS ---------------- */
 
@@ -21,15 +22,15 @@ function renderData(data) {
         itemElement.textContent =  item.title;
         resultContainer.appendChild(itemElement);
     });
-};
-
+}
 
 function search() {
     const searchTerm = document.getElementById('search-bar').value.toLowerCase();
     fetchData()
         .then(data => {
             renderData(data.filter(item => item.title.toLowerCase().includes(searchTerm)))
-        }).catch(error => console.error('Error fetching data:', error));
-};
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
 
 fetchData().then(data => renderData(data));
