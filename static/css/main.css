@@ -306,6 +306,7 @@ nav a.hover:hover::after {
     padding: .5rem;
     position: absolute;
     bottom: -10%;
+    max-width: 20rem;
 }
 
 .red-box {
@@ -589,8 +590,20 @@ nav a.hover:hover::after {
     border-left: none;
 }
 
-.search-bar-icon {
+#search-bar-icon {
     padding: .8rem;
     width: 4rem;
     cursor: pointer;
+}
+
+#search-results {
+    display: none;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.search-article {
+    width: 30rem;
 }

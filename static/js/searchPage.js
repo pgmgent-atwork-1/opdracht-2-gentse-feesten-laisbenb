@@ -7,10 +7,15 @@ function fetchData() {
         .then(response => response.json());
 }
 
+/* ---------------- DISPLAY EVENTS ---------------- */
+
+const display = document.getElementById('search-results');
+
 /* ---------------- LOAD IN EVENTS ---------------- */
 
 document.getElementById("search-button").addEventListener("click", function() {
     search();
+    display.style.display = "flex";
 });
 
 function renderData(data) {
@@ -19,7 +24,16 @@ function renderData(data) {
 
     data.forEach(item => {
         const itemElement = document.createElement('div');
-        itemElement.textContent =  item.title;
+        itemElement.innerHTML =  `<article class="article-event search-article relative">
+        <img src="${item.image.thumb}" alt="Event Image">
+        <div class="event-date">
+            <p>${item.day_of_week.slice(0, 2)} juli</p>
+        </div>
+        <div class="artist-information">
+            <h2>${item.title}</h2>
+            <p><span class="red-box">${item.location}</span> ${item.start} u</p>
+        </div>
+        </article>` ;
         resultContainer.appendChild(itemElement);
     });
 }
