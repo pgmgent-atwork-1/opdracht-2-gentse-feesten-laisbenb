@@ -562,6 +562,7 @@ nav a.hover:hover::after {
 .searchbox {
     width: 100%;
     padding-top: 0rem;
+    padding-bottom: 0;
     flex-wrap: nowrap;
 }
 
@@ -594,6 +595,13 @@ nav a.hover:hover::after {
     padding: .8rem;
     width: 4rem;
     cursor: pointer;
+}
+
+#number-of-results {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    font-size: 2rem;
 }
 
 #search-results {
