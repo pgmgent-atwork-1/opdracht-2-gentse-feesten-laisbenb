@@ -25,13 +25,13 @@ function renderData(data) {
     const resultTrackerContainer = document.getElementById('number-of-results');
     let resultTracker = 0;
 
-    data.forEach(item => {
+    data.filter(item => item.image !== null).forEach(item => {
         resultTracker++;
         const itemElement = document.createElement('div');
         itemElement.innerHTML =  `<article class="article-event search-article relative">
         <img src="${item.image.full}" alt="Event Image">
         <div class="event-date">
-        <p>${item.day_of_week.slice(0, 2)} juli</p>
+        <p>${item.day_of_week.slice(0, 2)}  ${item.day} juli</p>
         </div>
         <div class="artist-information">
         <h2>${item.title}</h2>
