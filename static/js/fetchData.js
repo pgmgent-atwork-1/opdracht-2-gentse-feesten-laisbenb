@@ -9,7 +9,7 @@ export {getNews};
 async function getEvents() {
     let eventItems = await fetch('https://www.pgm.gent/data/gentsefeesten/events_500.json');
     eventItems = await eventItems.json();
-    return eventItems;
+    return eventItems.filter(event => event.image !== null);
 };
 
 export {getEvents};

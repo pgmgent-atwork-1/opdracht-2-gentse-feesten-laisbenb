@@ -7,6 +7,7 @@ import {getEvents} from "./fetchData.js";
 
 async function getEventItems() {
     const eventItems = await getEvents();
+    console.log(eventItems);
     generateEventItems(eventItems);
 };
 
@@ -19,7 +20,7 @@ function generateEventItems(eventItems) {
         let randomEventNumber = Math.floor(Math.random() * 500);
         const eventItem = eventItems[randomEventNumber];
         console.log(randomEventNumber);
-        if (checkNumber != randomEventNumber && eventItem.image !== null) {
+        if (checkNumber != randomEventNumber) {
             let event = document.getElementById('events');
         html += `<article class="article-event relative">
         <div class="artist-image">

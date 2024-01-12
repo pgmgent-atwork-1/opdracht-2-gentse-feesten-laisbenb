@@ -4,7 +4,7 @@
 
 function fetchData() {
     return fetch('https://www.pgm.gent/data/gentsefeesten/events_500.json')
-        .then(response => response.json());
+        .then(recipe => recipe.json());
 };
 
 /* ---------------- DISPLAY EVENTS ---------------- */
@@ -25,7 +25,7 @@ function renderData(data) {
     const resultTrackerContainer = document.getElementById('number-of-results');
     let resultTracker = 0;
 
-    data.filter(item => item.image !== null).forEach(item => {
+    data.forEach(item => {
         resultTracker++;
         const itemElement = document.createElement('div');
         itemElement.innerHTML =  `<article class="article-event search-article relative">
