@@ -14,6 +14,8 @@ function collectEventCategories(eventData) {
     };
     let filteredCategoryArray = [...new Set(categoryArray)];
     console.log(filteredCategoryArray);
+
+    document.getElementById('categories').innerHTML = `<img src="../static/img/gentse-feesten-icoontjes/tag.svg" alt="Tag icon">`;
 };
 
 fetchEventCategories();
