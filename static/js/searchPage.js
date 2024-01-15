@@ -1,24 +1,21 @@
 /* ---------------- JSON FILE READER ---------------- */
 
-//import {getEvents} from "./fetchData.js";
+import {getEvents} from "./fetchData.js";
 
-function fetchData() {
-    return fetch('https://www.pgm.gent/data/gentsefeesten/events_500.json')
-        .then(recipe => recipe.json());
+async function fetchEvents() {
+    let eventData = await getEvents();
+    return eventData;
 };
-
-/* ---------------- DISPLAY EVENTS ---------------- */
-
-const display = document.getElementById('search-results');
 
 /* ---------------- LOAD IN EVENTS ---------------- */
 
 document.getElementById("search-button").addEventListener("click", function() {
     search();
-    display.style.display = "flex";
+    document.getElementById('search-results').style.display = "flex";
 });
 
-function renderData(data) {
+function renderEvents(data) {
+    console.log(data);
     const resultContainer = document.getElementById('search-results');
     resultContainer.innerHTML = "";
 
@@ -47,11 +44,11 @@ function renderData(data) {
 
 function search() {
     const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-    fetchData()
+    fetchEvents()
         .then(data => {
-            renderData(data.filter(item => item.title.toLowerCase().includes(searchTerm)))
+            renderEvents(data.filter(item => item.title.toLowerCase().includes(searchTerm)))
         })
         .catch(error => console.error('Error fetching data:', error));
 };
 
-fetchData().then(data => renderData(data));
+fetchEvents()
