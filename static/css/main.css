@@ -138,10 +138,21 @@ nav a {
 nav a.hover:hover::after {
     content: "";
     width: 1.3rem;
-    height: 10%;
+    height: 20%;
     background: white;
     position: absolute;
     bottom: -50%;
+    left: 0%;
+}
+
+nav a.active::after {
+    content: "";
+    width: 1.3rem;
+    height: 70%;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    position: absolute;
+    bottom: -95%;
     left: 0%;
 }
 
