@@ -17,7 +17,7 @@ function generateEventItems(eventItems) {
     let checkNumber = -1;
     for (let i = 0; i < 8; i++) {
         console.log(`Check number start = ${checkNumber}`);
-        let randomEventNumber = Math.floor(Math.random() * 500);
+        let randomEventNumber = Math.floor(Math.random() * eventItems.length);
         const eventItem = eventItems[randomEventNumber];
         console.log(randomEventNumber);
         if (checkNumber != randomEventNumber) {
