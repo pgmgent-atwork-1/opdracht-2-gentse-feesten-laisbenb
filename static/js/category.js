@@ -14,8 +14,13 @@ function collectEventCategories(eventData) {
     };
     let filteredCategoryArray = [...new Set(categoryArray)];
     console.log(filteredCategoryArray);
+    console.log(filteredCategoryArray.length);
 
-    document.getElementById('categories').innerHTML = `<img src="../static/img/gentse-feesten-icoontjes/tag.svg" alt="Tag icon">`;
+    for (let i = 0; i < filteredCategoryArray.length; i++) {
+        document.getElementById('categories').innerHTML  += `<div class="flex one-category">
+        <img class="tag-svg" src="../static/img/gentse-feesten-icoontjes/tag.svg" alt="Tag icon"> <p class="black">${filteredCategoryArray[i]}</p>
+        </div>`;
+    };
 };
 
 fetchEventCategories();

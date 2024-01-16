@@ -627,3 +627,53 @@ nav a.active::after {
 .search-article {
     width: 30rem;
 }
+
+/* ---------------- DAY PAGE ---------------- */
+
+.category-box {
+    flex-direction: column;
+    margin: 5rem;
+    border: 2px solid hsl(31, 49%, 81%);
+    padding: 0;
+    gap: 0;
+}
+
+.filter-box-icons {
+    fill: hsl(31, 49%, 81%);
+    gap: 0;
+}
+
+.filter-box-icons svg {
+    border: 2px solid hsl(31, 49%, 81%);
+    padding: .5rem;
+    border-bottom: none;
+    border-top: none;
+}
+
+.checkbox-box {
+    color: hsl(31, 49%, 81%);
+}
+
+.checkbox{
+    gap: 0;
+}
+
+.checkbox svg {
+    border: none;
+}
+
+#categories {
+    justify-content: center;
+    gap: 0;
+}
+
+.one-category {
+    gap: .5rem;
+    width: 15rem;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.tag-svg {
+    width: 1.5rem;
+}
