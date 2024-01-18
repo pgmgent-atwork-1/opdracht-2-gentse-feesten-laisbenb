@@ -100,6 +100,28 @@ svg {
     fill: red;
 }
 
+/* ---------------- DROPDOWN ---------------- */
+
+.dropdown {
+    flex-direction: column;
+}
+
+.dropdown-button{
+    gap: 0;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: -150%;
+    border: 1px solid white;
+}
+
 /* ---------------- NAVIGATION ---------------- */
 
 nav {
