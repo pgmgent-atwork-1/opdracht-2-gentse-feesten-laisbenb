@@ -705,3 +705,15 @@ nav a.active::after {
 #categoriesAndEvents {
     text-align: center;
 }
+
+.category-titles {
+    font-size: 3rem;
+    margin: 5rem 0;
+}
+
+.event-category-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 0 8rem;
+}
