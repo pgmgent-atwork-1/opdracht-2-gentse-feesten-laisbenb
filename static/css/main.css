@@ -102,8 +102,19 @@ svg {
 
 /* ---------------- DROPDOWN ---------------- */
 
+.dropdown-button {
+    background: transparent;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    gap: 0;
+    align-items: center;
+}
+
 .dropdown-content {
     display: none;
+    position: absolute;
+    gap: 0;
 }
 
 .showDropDown {
@@ -673,8 +684,11 @@ nav a.active::after {
 }
 
 #categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 0;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .one-category {
@@ -686,4 +700,8 @@ nav a.active::after {
 
 .tag-svg {
     width: 1.5rem;
+}
+
+#categoriesAndEvents {
+    text-align: center;
 }
