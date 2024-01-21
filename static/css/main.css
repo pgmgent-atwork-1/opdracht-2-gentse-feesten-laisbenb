@@ -651,6 +651,10 @@ nav a.active::after {
 
 /* ---------------- DAY PAGE ---------------- */
 
+.category-title {
+    font-size: 3rem;
+}
+
 .category-box {
     flex-direction: column;
     margin: 5rem;

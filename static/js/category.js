@@ -23,7 +23,7 @@ function collectEventCategories(eventData, filterDay) {
         <img class="tag-svg" src="../static/img/gentse-feesten-icoontjes/tag.svg" alt="Tag icon"> <a href="#" class="scroll-links black" data-target="event-title-${i}">${category}</a>
         </div>`;
         document.getElementById('categoriesAndEvents').innerHTML += `<div class="category-titles flex">
-        <h2 id="event-title-${i}" class=" container">${category}</h2><a href="#" id="arrow-up"><svg fill="white" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="32" viewBox="0 0 18 32">
+        <h2 id="event-title-${i}" class="container">${category}</h2><a href="#" id="arrow-up"><svg fill="white" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="32" viewBox="0 0 18 32">
         <path d="M17.809 9.9l-8.88-9.9-8.929 9.897 2.225 2.007 5.189-5.752-0 25.848h2.997l0-25.863 5.169 5.763z"></path>
         </svg></a></div>
         <div id="${eventContentID}" class="event-category-content"></div>`;
