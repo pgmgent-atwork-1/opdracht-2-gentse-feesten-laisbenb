@@ -54,3 +54,25 @@
 .white:hover {
     fill: white;
 }
+
+@media (max-width: 22.5rem) {
+    #overlay {
+        padding: 0;
+        position: relative;
+        padding-left: 1rem;
+    }
+    #gf-menu-logo {
+        width: 10rem;
+    }
+    .left-overlay {
+        background-color: hsl(0, 79%, 57%);
+    }
+    .menu-nav-icons {
+        position: absolute;
+        right: -5%;
+        gap: .2rem;
+    }
+    .left-overlay img {
+        display: none;
+    }
+}
