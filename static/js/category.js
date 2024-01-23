@@ -70,6 +70,8 @@ function collectEventCategories(eventData, filterDay) {
         });
     });
     console.log(`Filtered events for day ${filterDay}`);
+    const selectedDay = document.getElementById(`day${filterDay}`);
+    selectedDay.classList.add('selected-day');
 };
 
 fetchEventCategories();

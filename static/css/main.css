@@ -815,6 +815,24 @@ nav a.active::after {
 
 /* ---------------- DAY PAGE ---------------- */
 
+.selected-day {
+  scale: 1.4;
+}
+
+.calender {
+  justify-content: center;
+  gap: .2rem;
+}
+
+.calender a {
+  background-color: hsl(0, 79%, 57%);
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
 .category-title {
   font-size: 3rem;
 }
