@@ -7,7 +7,7 @@ import {getEvents} from "./fetchData.js";
 
 async function getEventItems() {
     const eventItems = await getEvents();
-    console.log(eventItems);
+    //console.log(eventItems);
     generateEventItems(eventItems);
 };
 
@@ -16,10 +16,10 @@ function generateEventItems(eventItems) {
     let html = "";
     let checkNumber = -1;
     for (let i = 0; i < 8; i++) {
-        console.log(`Check number start = ${checkNumber}`);
+        //console.log(`Check number start = ${checkNumber}`);
         let randomEventNumber = Math.floor(Math.random() * eventItems.length);
         const eventItem = eventItems[randomEventNumber];
-        console.log(randomEventNumber);
+        //console.log(randomEventNumber);
         if (checkNumber != randomEventNumber) {
             let event = document.getElementById('events');
         html += `<article class="article-event relative">
@@ -51,10 +51,10 @@ function generateEventItems(eventItems) {
         </div>
         </article>`;
         event.innerHTML = html;
-        console.log(`Second random number check = ${checkNumber}`);
+        //console.log(`Second random number check = ${checkNumber}`);
         };
         checkNumber = randomEventNumber;
-        console.log(`Check number end = ${checkNumber}`);
+        //console.log(`Check number end = ${checkNumber}`);
     };
     // Herschrijf deze code met .slice() method.
 };
