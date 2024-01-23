@@ -55,7 +55,7 @@
     fill: white;
 }
 
-@media (max-width: 22.5rem) {
+@media (max-width: 37.5rem) {
     #overlay {
         padding: 0;
         position: relative;

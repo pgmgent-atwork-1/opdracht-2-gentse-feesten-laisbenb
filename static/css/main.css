@@ -194,7 +194,7 @@ nav a.active::after {
 
 /* ---------------- MOBILE NAV ---------------- */
 
-@media (max-width: 360px) {
+@media (max-width: 37.5rem) {
   .nav-flex {
     padding: 0;
     margin: 1rem;
@@ -337,7 +337,7 @@ nav a.active::after {
 
 /* ---------------- SECTION 1 MOBILE ---------------- */
 
-@media (max-width: 22.5rem) {
+@media (max-width: 37.5rem) {
   .gf-first-section {
     padding: 0;
     padding-top: 3rem;
@@ -497,7 +497,7 @@ nav a.active::after {
 
 /* ---------------- SECTION 2 GRID + NEWSLETTER MOBILE ---------------- */
 
-@media (max-width: 22.5rem) {
+@media (max-width: 37.5rem) {
   .gf-second-section {
     flex-direction: column;
     padding: 1rem;
@@ -612,7 +612,7 @@ nav a.active::after {
 
 /* ---------------- FOOTER SECTION 1 MOBILE ---------------- */
 
-@media (max-width: 22.5rem) {
+@media (max-width: 37.5rem) {
   .first-footer-section {
     padding: 1rem;
     padding-bottom: 10rem;
@@ -683,7 +683,7 @@ nav a.active::after {
 
 /* ---------------- FOOTER SECTION 2 MOBILE ---------------- */
 
-@media (max-width: 22.5rem) {
+@media (max-width: 37.5rem) {
   .gf-second-section-footer {
     padding: 2rem;
     padding-top: 6rem;
@@ -821,6 +821,7 @@ nav a.active::after {
 
 .selected-day {
   scale: 1.4;
+  border: 1px solid black;
 }
 
 .calender {
@@ -916,18 +917,18 @@ nav a.active::after {
   margin: 0 8rem;
 }
 
-@media (max-width: 22.5rem) {
+@media (max-width: 37.5rem) {
   .calender {
     padding: .2rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .calender a {
-    width: 4rem;
-    height: 4rem;
+    width: 7rem;
+    height: 7rem;
   }
   .category-section {
     padding: 0;
-    padding-left: 1rem;
+    padding-left: 3rem;
     margin: 0;
   }
   .category-box {
@@ -953,7 +954,7 @@ nav a.active::after {
     gap: 0;
   }
   .category-titles h2 {
-    font-size: 1rem;
+    font-size: 2.5rem;
     padding: 3rem 1rem;
     margin: 0;
   }

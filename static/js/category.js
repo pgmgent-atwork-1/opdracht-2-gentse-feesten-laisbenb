@@ -45,11 +45,11 @@ function collectEventCategories(eventData, filterDay) {
         };
     };
     const scrollLinks = document.querySelectorAll('.scroll-links');
-    console.log(scrollLinks);
+    //console.log(scrollLinks);
     scrollLinks.forEach((link) => {
         link.addEventListener("click", (event) => {
             event.preventDefault();
-            console.log("Link clicked");
+            //console.log("Link clicked");
 
             const scrollToLocation = link.getAttribute('data-target');
             console.log("Scroll to location:", scrollToLocation);
